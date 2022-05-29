@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout/user-layout.html :: userLayout(~{::main})}">
+
+<body>
+
+    <nav th:replace="fragment/user/navbar.html :: navbar" role="main"></nav>
+
+</body>
+</html>

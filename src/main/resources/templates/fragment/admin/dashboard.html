@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<table class="table table-striped border" th:fragment="dashBoard">
+    <thead>
+    <tr>
+        <th class="text-white">ID</th>
+        <th class="text-white">Title</th>
+        <th class="text-white">Price</th>
+        <th class="text-white">Publish Time</th>
+        <th class="text-white">Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="book:${books}">
+        <td th:text="${book.id}" class="text-white"></td>
+        <td th:text="${book.title}" class="text-white"></td>
+        <td th:text="${book.price}" class="text-white"></td>
+        <td th:text="${book.publishTime}" class="text-white"></td>
+        <td>
+            <img th:src="${book.imageUrl}" alt="" class="w-25 h-auto">
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

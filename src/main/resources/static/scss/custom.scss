@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+
+#headerSection {
+
+  position: relative;
+  background: url("https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")  center / cover no-repeat;
+  min-height: 80%;
+  opacity: 0.8;
+  background-attachment: fixed;
+
+  .text-container {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+
+}
+
+.bgimg-2 {
+  position: relative;
+  background: url("https://images.pexels.com/photos/256559/pexels-photo-256559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+
+.bg-img{
+  background-image: url("https://images.pexels.com/photos/256559/pexels-photo-256559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+#bg-img1 {
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+#cartview-img{
+  background-image: url("https://images.pexels.com/photos/5632400/pexels-photo-5632400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+#dashboard-img {
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  background-attachment: fixed;
+}
+
+#login-img {
+  background-image: url("https://images.pexels.com/photos/1425146/pexels-photo-1425146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+.bg-card:hover{
+  transform: translateY(20px);
+  &:before{
+    opacity: 1
+  }
+}
+
+#bookSection {
+  background: gray;
+}
+
+.bgimg-3 {
+  position: relative;
+  background: url("https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
+
+.bg-gray {
+  background: gray;
+}

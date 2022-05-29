@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/user-layout.html :: userLayout(~{::main})}" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main role="main" id="bg-img1">
+    <div class="container p-5" >
+        <div th:replace="fragment/user/book-details.html :: bookDetails"></div>
+
+        <div>
+            <a href="#" th:href="@{/user/book}" class="btn btn-info ml-5 mr-5 mt-3">Back Home</a>
+            <a th:href="@{'/user/book/add/cart/' + ${book.id}}" class="btn btn-info mr-5 mt-3">Subscribe</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>

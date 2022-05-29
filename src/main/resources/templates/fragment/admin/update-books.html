@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<form action="#" th:fragment="updateBook" method="post" th:action="@{/admin/book/updated}" th:object="${book}">
+    <div class="form-group">
+        <label for="title" class="text-white">Title</label>
+        <input type="text" id="title" th:field="*{title}" class="form-control"
+               th:classappend="${#fields.hasErrors('title')} ? 'is-invalid'">
+        <small class="invalid-feedback" th:errors="*{title}"></small>
+    </div>
+    <div class="form-group">
+        <label for="price" class="text-white">Price</label>
+        <input type="text" id="price" th:field="*{price}" class="form-control"
+               th:classappend="${#fields.hasErrors('price')} ? 'is-invalid'">
+        <small th:classappend="invalid-feedback" th:errors="*{price}"></small>
+    </div>
+    <div class="form-group">
+        <label for="imageUrl" class="text-white">Image Url</label>
+        <input type="text" id="imageUrl" th:field="*{imageUrl}" class="form-control "
+               th:classappend="${#fields.hasErrors('imageUrl')} ? 'is-invalid'">
+        <small th:classappend="invalid-feedback" th:errors="*{imageUrl}"></small>
+    </div>
+    <div class="form-group">
+        <label for="publishTime" class="text-white">Publish Time</label>
+        <input type="text" id="publishTime" th:field="*{publishTime}" class="form-control "
+               th:classappend="${#fields.hasErrors('publishTime')} ? 'is-invalid'">
+        <small th:classappend="invalid-feedback" th:errors="*{publishTime}"></small>
+    </div>
+
+    <button class="btn btn-info" type="submit" >Submit</button>
+    <a th:href="@{/admin/book}" class="btn btn-info">Cancel</a>
+</form>
+</body>
+</html>

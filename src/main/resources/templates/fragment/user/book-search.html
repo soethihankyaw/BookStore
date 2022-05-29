@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="searchBar">
+    <form th:action="@{book/search}" method="post">
+        <div class="form-group">
+            <div class="input-group">
+                <input class="form-control" type="text" name="search" placeholder="Search Books Here">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="my-5" th:if="${reply}">
+        <p class="text-muted text-center" th:text="${reply}"></p>
+    </div>
+</div>
+
+</body>
+</html>

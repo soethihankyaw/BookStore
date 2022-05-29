@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:fragment="bookDetails" class="row">
+    <div class="col-md-5">
+        <img th:src="${book.imageUrl}" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-7">
+        <h2 class="text-center text-white my-5" th:text="${book.title}"></h2>
+        <p class="text-white my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci beatae commodi delectus, deleniti dolorem eveniet, excepturi incidunt itaque iure non numquam pariatur ratione sed similique sunt voluptatibus? Exercitationem, vel.</p>
+        <p class="text-center text-white my-5">The price : <span th:text="${book.price}" class="text-danger"></span> &nbsp;$</p>
+    </div>
+</div>
+</body>
+</html>

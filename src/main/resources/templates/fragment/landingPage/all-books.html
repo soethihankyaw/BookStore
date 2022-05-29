@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<section th:fragment="allBook" class="bg-white p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p href="#" class="h5  font-weight-bold">Discover Your Book</p>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2"><a th:href="@{/user/book}" class="text-danger mt-3 text-decoration-none">View All</a></div>
+
+        </div>
+        <div class="row my-3">
+            <div class="col-md-3 bg-card">
+                <a th:href="@{/user/book}" class="text-decoration-none">
+                    <div class="card border-0" style="width: 14rem;">
+                        <img src="https://picsum.photos/400/?image=50" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title lead font-weight-bolder">The Fall</h5>
+                            <p class="card-text font-weight-bolder text-danger">$200.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 bg-card">
+                <a th:href="@{/user/book}" class="text-decoration-none">
+                    <div class="card border-0" style="width: 14rem;">
+                        <img src="https://picsum.photos/400/?image=51" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title lead font-weight-bolder">The Winter</h5>
+                            <p class="card-text font-weight-bolder text-danger">$200.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 bg-card">
+                <a th:href="@{/user/book}" class="text-decoration-none">
+                    <div class="card border-0" style="width: 14rem;">
+                        <img src="https://picsum.photos/400/?image=52" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title lead font-weight-bolder">The Summer</h5>
+                            <p class="card-text font-weight-bolder text-danger">$200.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 bg-card">
+                <a th:href="@{/user/book}" class="text-decoration-none">
+                    <div class="card border-0" style="width: 14rem;">
+                        <img src="https://picsum.photos/400/?image=53" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title lead font-weight-bolder">The Spring</h5>
+                            <p class="card-text font-weight-bolder text-danger">$200.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

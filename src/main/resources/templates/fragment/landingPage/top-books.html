@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <section th:fragment="topBook" class="bg-white py-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3 py-3">
+                    <a th:href="@{/user/book}" class="text-decoration-none ">
+                        <div class="card border bg-warning" style="width: 14rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-dark font-weight-bolder">10 BOOKS FOR JAVA <br> DEVELOPER</h5>
+                                <p class="card-text font-weight-bolder text-danger mb-3">$300.0</p>
+                                <p  class="card-link  text-dark">More About</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 py-3">
+                    <a th:href="@{/user/book}" class="text-decoration-none ">
+                        <div class="card border bg-secondary" style="width: 14rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-dark font-weight-bolder">5 BOOKS FOR JAVASCRIPT DEVELOPER</h5>
+                                <p class="card-text font-weight-bolder text-danger mb-3">$300.0</p>
+                                <p  class="card-link  text-dark">More About</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 py-3">
+                    <a th:href="@{/user/book}" class="text-decoration-none ">
+                        <div class="card border bg-info" style="width: 14rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-dark font-weight-bolder">10 BOOKS FOR PYTHON DEVELOPER</h5>
+                                <p class="card-text font-weight-bolder text-danger mb-3">$300.0</p>
+                                <p  class="card-link  text-dark">More About</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 py-3">
+                    <a th:href="@{/user/book}" class="text-decoration-none ">
+                        <div class="card border bg-success" style="width: 14rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-dark font-weight-bolder">12 BOOKS FOR FLUTTER DEVELOPER</h5>
+                                <p class="card-text font-weight-bolder text-danger mb-3">$300.0</p>
+                                <p  class="card-link  text-dark">More About</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

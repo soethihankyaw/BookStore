@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout/user-layout.html ::userLayout(~{::main})}" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <main role="main">
+        <div th:replace="fragment/user/user-all-book.html :: allBook"></div>
+    </main>
+
+</body>
+</html>

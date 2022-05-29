@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout/user-layout.html :: userLayout(~{::main})}">
+
+<body>
+    <main role="main">
+        <div class="container my-5">
+            <div th:replace="fragment/user/check-out.html :: userForm"></div>
+        </div>
+    </main>
+</body>
+</html>

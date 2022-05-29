@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:fragment="bookShelf">
+        <div class="row">
+            <div class="col-md-4" th:each="book : ${books}">
+                <div class="card border-0" style="width: 13rem;" >
+                    <img th:src="${book.imageUrl}" class="card-img-top img-fluid">
+                    <div class="card-body text-center">
+                        <h5 class="card-title lead font-weight-bolder" th:text="${book.title}"></h5>
+                        <p class="card-text font-weight-bolder text-danger" ><span th:text="${book.price}"></span>$</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>

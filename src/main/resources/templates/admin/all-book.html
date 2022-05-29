@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout/admin-layout.html ::adminLayout(~{::main})}">
+
+<body>
+<main role="main" id="dashboard-img">
+    <div class="container p-5">
+        <h3 class="text-center font-weight-bold my-4 text-white">BOOK MANAGEMENT</h3>
+        <div th:if="${success}" class="alert alert-success text-center" role="alert">
+            <span>Book is successfully added.</span>
+        </div>
+        <div th:if="${delete}" class="alert alert-success text-center" role="alert">
+            <span>Book is successfully deleted.</span>
+        </div>
+        <div th:if="${update}" class="alert alert-success text-center" role="alert">
+            <span>Book is successfully updated.</span>
+        </div>
+        <div th:replace="fragment/admin/all-book.html :: allBookSection"></div>
+        <div class="mt-3">
+            <a class="btn btn-primary" th:href="@{/admin/book/create}">New Book</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>

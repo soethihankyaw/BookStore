@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<table th:fragment="cartView" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.price + ' $'}"></td>
+        <td>
+            <a href="#" class="btn btn-outline-danger"
+               th:href="@{'/user/book/cart/remove/'+ ${book.id}}">Remove</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
